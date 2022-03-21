@@ -29,7 +29,7 @@
 * @brief 初始化gui
 */
 
-void gui_init(DrawPixelFunc* drawPixel);
+void gui_init(DrawPixelFunc drawPixel);
 
 /**
 * @brief 销毁控件
