@@ -21,10 +21,10 @@
 * @brief 初始化gui
 */
 
-void gui_init(void)
-{
-//	//初始化字库
-//	font_init();
+void gui_init(DrawPixelFunc* drawPixel) {
+	//	//初始化字库
+	//	font_init();
+	gui_interface_set_draw_pixel_func(drawPixel);
 }
 
 /**

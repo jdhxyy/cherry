@@ -209,7 +209,7 @@ void gui_draw_bitmap(uint16_t x,uint16_t y,const uint8_t *bmp)
 	for (i = 0;i < bmp_info_header.width * bmp_info_header.height;i++)
 	{
 		bit = (*buf_pt >> (7 - index_bit)) & 0x1;
-		inf_lcd_draw_pixel(x + column,y + bmp_info_header.height -1 - row,bit);
+		gui_interface_draw_pixel(x + column,y + bmp_info_header.height -1 - row,bit);
 		
 		index_bit++;
 		if (index_bit >= 8)

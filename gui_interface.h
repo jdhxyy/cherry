@@ -14,7 +14,9 @@
 *							头文件
 **********************************************************************/
 
-#include "inf_lcd.h"
+#include <stdio.h>
+#include <stdint.h>
+#include <string.h>
 
 /*********************************************************************
 *							宏定义
@@ -26,6 +28,9 @@
 
 #define LCD_WIDTH			128
 #define LCD_HEIGHT			64
+
+// DrawPixelFunc 绘点函数
+typedef void (*DrawPixelFunc)(uint8_t x, uint8_t y, uint8_t show);
 
 /*********************************************************************
 *							函数
