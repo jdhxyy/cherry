@@ -45,6 +45,9 @@ typedef void (*DrawPixelFunc)(uint8_t x, uint8_t y, uint8_t show);
 
 void gui_interface_draw_pixel(uint8_t x,uint8_t y,uint8_t show);
 
+// gui_interface_set_draw_pixel_func 设置绘点回调函数
+void gui_interface_set_draw_pixel_func(DrawPixelFunc drawPixel);
+
 #endif
 
 
